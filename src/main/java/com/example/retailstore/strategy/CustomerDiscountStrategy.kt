@@ -10,8 +10,10 @@ class CustomerDiscountStrategy : DiscountStrategy {
         val totalAmount = bill.totalAmount
         var netPayableAmount = totalAmount
         netPayableAmount -= totalAmount * CUSTOMER_DISCOUNT
+
         val discountAmount = (totalAmount / 100).toInt() * DiscountStrategy.DISCOUNT_PER_100
         netPayableAmount -= discountAmount
+
         return netPayableAmount
     }
 
