@@ -1,5 +1,7 @@
 ## Retail-store
 
+#### Please refer UML.png in the root directory for high level key classes relationships
+
 Command to build the solution
 ```
 ./gradlew clean build
