@@ -30,7 +30,7 @@ Test report path : build/reports/tests/test/index.html
 ```
 
 
-Sample Input and output
+Sample request and response
 ```
 Request Body
 
@@ -42,7 +42,9 @@ Request Body
 
 Response Body
 
-NetPayableAmount : double
+{
+    "netPayableAmount": 130.0
+}
 ```
 
 Input Description
@@ -78,7 +80,7 @@ POST /net-payable
 200 OK
 
 {
-    130.0
+    "netPayableAmount": 130.0
 }
 
 ```
